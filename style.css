@@ -9,3 +9,7 @@ img {
   height: 150px;
   width: 160px;
 }
+
+h3 {
+  padding-bottom: 0;
+}
