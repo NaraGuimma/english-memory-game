@@ -3,131 +3,131 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: 'book',
-      img: './ìmages/book.PNG'
+      img: './images/book.PNG'
     },
     {
       name: 'clock',
-      img: './ìmages/clock.PNG'
+      img: './images/clock.PNG'
     },
     {
       name: 'colored-pencil',
-      img: './ìmages/colored-pencil.PNG'
+      img: './images/colored-pencil.PNG'
     },
     {
       name: 'computer',
-      img: './ìmages/computer.PNG'
+      img: './images/computer.PNG'
     },
     {
       name: 'crayons',
-      img: './ìmages/crayons.PNG'
+      img: './images/crayons.PNG'
     },
     {
       name: 'eraser',
-      img: './ìmages/eraser.PNG'
+      img: './images/eraser.PNG'
     },
     {
       name: 'glue',
-      img: './ìmages/glue.PNG'
+      img: './images/glue.PNG'
     },
     {
       name: 'paint-set',
-      img: './ìmages/paint-set.PNG'
+      img: './images/paint-set.PNG'
     },
     {
       name: 'pen',
-      img: './ìmages/pen.PNG'
+      img: './images/pen.PNG'
     },
     {
       name: 'pencil-case',
-      img: './ìmages/pencil-case.PNG'
+      img: './images/pencil-case.PNG'
     },
     {
       name: 'pupil',
-      img: './ìmages/pupil.PNG'
+      img: './images/pupil.PNG'
     },
     {
       name: 'school-bus',
-      img: './ìmages/school-bus.PNG'
+      img: './images/school-bus.PNG'
     },
     {
       name: 'school',
-      img: './ìmages/school.PNG'
+      img: './images/school.PNG'
     },
     {
       name: 'schoolbag',
-      img: './ìmages/schoolbag.PNG'
+      img: './images/schoolbag.PNG'
     },
     {
       name: 'scissors',
-      img: './ìmages/scissors.PNG'
+      img: './images/scissors.PNG'
     },
     {
       name: 'teacher',
-      img: './ìmages/teacher.PNG'
+      img: './images/teacher.PNG'
     },
     {
       name: 'book',
-      img: './ìmages/book.PNG'
+      img: './images/book.PNG'
     },
     {
       name: 'clock',
-      img: './ìmages/clock.PNG'
+      img: './images/clock.PNG'
     },
     {
       name: 'colored-pencil',
-      img: './ìmages/colored-pencil.PNG'
+      img: './images/colored-pencil.PNG'
     },
     {
       name: 'computer',
-      img: './ìmages/computer.PNG'
+      img: './images/computer.PNG'
     },
     {
       name: 'crayons',
-      img: './ìmages/crayons.PNG'
+      img: './images/crayons.PNG'
     },
     {
       name: 'eraser',
-      img: './ìmages/eraser.PNG'
+      img: './images/eraser.PNG'
     },
     {
       name: 'glue',
-      img: './ìmages/glue.PNG'
+      img: './images/glue.PNG'
     },
     {
       name: 'paint-set',
-      img: './ìmages/paint-set.PNG'
+      img: './images/paint-set.PNG'
     },
     {
       name: 'pen',
-      img: './ìmages/pen.PNG'
+      img: './images/pen.PNG'
     },
     {
       name: 'pencil-case',
-      img: './ìmages/pencil-case.PNG'
+      img: './images/pencil-case.PNG'
     },
     {
       name: 'pupil',
-      img: './ìmages/pupil.PNG'
+      img: './images/pupil.PNG'
     },
     {
       name: 'school-bus',
-      img: './ìmages/school-bus.PNG'
+      img: './images/school-bus.PNG'
     },
     {
       name: 'school',
-      img: './ìmages/school.PNG'
+      img: './images/school.PNG'
     },
     {
       name: 'schoolbag',
-      img: './ìmages/schoolbag.PNG'
+      img: './images/schoolbag.PNG'
     },
     {
       name: 'scissors',
-      img: './ìmages/scissors.PNG'
+      img: './images/scissors.PNG'
     },
     {
       name: 'teacher',
-      img: './ìmages/teacher.PNG'
+      img: './images/teacher.PNG'
     }
   ]
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img');
-      card.setAttribute('src', './ìmages/blank.PNG');
+      card.setAttribute('src', './images/blank.PNG');
       card.setAttribute('data-id', i);
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
@@ -156,12 +156,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1];
     if (cardsChosen[0] === cardsChosen[1]) {
       alert("You found a match!!!!");
-      cards[optionOneId].setAttribute('src', './ìmages/white.png');
-      cards[optionTwoId].setAttribute('src', './ìmages/white.png');
+      cards[optionOneId].setAttribute('src', './images/white.png');
+      cards[optionTwoId].setAttribute('src', './images/white.png');
       cardsWon.push(cardsChosen)
     } else {
-      cards[optionOneId].setAttribute('src', './ìmages/blank.PNG');
-      cards[optionTwoId].setAttribute('src', './ìmages/blank.PNG');
+      cards[optionOneId].setAttribute('src', './images/blank.PNG');
+      cards[optionTwoId].setAttribute('src', './images/blank.PNG');
     }
     cardsChosen = [];
     cardsChosenId = [];
